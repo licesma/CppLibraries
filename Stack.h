@@ -19,7 +19,7 @@ public:Stack() {
 }
 	   void  push(T data) {
 		   ListNode<T>* neuf; neuf = new ListNode<T>(data);
-		   nuef->next = head;
+		   neuf->next = head;
 		   head = neuf;
 	   }
 	   T peek() {
@@ -29,7 +29,7 @@ public:Stack() {
 			   throw "Stack is empty, nothing to peek";
 	   }
 	   T pop() {
-		   if (head != null) {
+		   if (head != nullptr) {
 			   T res = head->val;
 			   head = head->next;
 		   }
