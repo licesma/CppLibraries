@@ -32,6 +32,7 @@ public:Stack() {
 		   if (head != nullptr) {
 			   T res = head->val;
 			   head = head->next;
+			   return T;
 		   }
 		   else  throw "Stack is empty, nothing to pop";
 		   
