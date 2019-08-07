@@ -12,11 +12,11 @@ public:
 		visited = false;
 		adyacent = new vector<GraphNode*>();
 	}
-	void Add(GraphNode* nd) {
+	void add(GraphNode* nd) { //for undirected graphs
 		adyacent->push_back(nd);
 		nd->dirAdd(this);
 	}
-	void dirAdd(GraphNode* nd) {
+	void dirAdd(GraphNode* nd) { //for directed graphs
 		adyacent->push_back(nd);
 	}
 	void printAdyacent() {
